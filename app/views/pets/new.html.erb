@@ -1,0 +1,8 @@
+<h1>Pets#new</h1>
+<p>This is the view to add a new pet!</p>
+
+<%= form_for(@pet) do |f| %>
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+	<%= f.submit nil, :class => "css-class another-class" %>
+<% end %>

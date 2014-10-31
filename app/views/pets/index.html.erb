@@ -1,0 +1,10 @@
+<h1>Here are all of the pets!</h1>
+<% if flash[:notice] %>
+	<p><%= flash[:notice] %></p>
+<% end %>
+
+<% @pets.each do |pet| %>
+	<h2>Name is: <%= pet.name %></h2>
+<% end %>
+
+<%= link_to 'add new pet', '/pets/new' %>
